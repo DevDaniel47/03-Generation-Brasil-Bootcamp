@@ -9,5 +9,5 @@ import br.com.generation.springboot.model.Postagem;
 
 @Repository
 public interface PostagemRepository extends JpaRepository<Postagem, Long>{
-	public List<Postagem> findAllByTituloContainingIgnorecase  (String titulo);
+	public List<Postagem> findAllByTituloContainingIgnoreCase (String titulo);
 }
