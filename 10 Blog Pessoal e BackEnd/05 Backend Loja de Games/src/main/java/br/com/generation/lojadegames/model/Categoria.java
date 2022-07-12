@@ -1,10 +1,13 @@
 package br.com.generation.lojadegames.model;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -12,30 +15,25 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
-@Table(name = "tb_produtos")
-public class Produto {
-	
+@Table(name = "tb_categoria")
+public class Categoria {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
 	@NotNull
-	@Size(min = 5, max = 50)
+	@Size(min = 4, max = 55)
 	private String nome;
 	
 	@NotNull
 	@Size(min = 15, max = 255)
 	private String descricao;
 	
-	@NotNull
-	private Double tamanho;
+	@OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)
+	@JsonIgnoreProperties("categoria")
+	private List<Produto> produtos;
 	
-	@NotNull
-	private Double valor;
-	
-	@ManyToOne
-	@JsonIgnoreProperties("produtos")
-	private Categoria categoria;
 	
 	
 	public long getId() {
@@ -56,27 +54,13 @@ public class Produto {
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
 	}
-	public Double getTamanho() {
-		return tamanho;
+	public List<Produto> getProdutos() {
+		return produtos;
 	}
-	public void setTamanho(Double tamanho) {
-		this.tamanho = tamanho;
-	}
-	public Double getValor() {
-		return valor;
-	}
-	public void setValor(Double valor) {
-		this.valor = valor;
-	}
-	public Categoria getCategoria() {
-		return categoria;
-	}
-	public void setCategoria(Categoria categoria) {
-		this.categoria = categoria;
+	public void setProdutos(List<Produto> produtos) {
+		this.produtos = produtos;
 	}
 	
 	
-	
-
 	
 }

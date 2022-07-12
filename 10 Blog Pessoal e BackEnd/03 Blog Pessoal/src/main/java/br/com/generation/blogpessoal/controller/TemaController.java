@@ -38,7 +38,7 @@ import org.springframework.http.ResponseEntity;
 	}
 	
 	@GetMapping("/nome/{nome}")
-	public ResponseEntity<List<Tema>> GetByName(@PathVariable String nome){
+	public ResponseEntity<List<Tema>> GetByNome(@PathVariable String nome){
 		return ResponseEntity.ok(repository.findAllByDescricaoContainingIgnoreCase(nome));
 	}
 	
