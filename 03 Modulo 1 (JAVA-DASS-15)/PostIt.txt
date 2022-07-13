@@ -1,0 +1,74 @@
+4 - Escrever um algoritmo que leia três valores inteiros e verifique se eles podem ser as medidas dos lados de um triângulo. 
+Propriedade: o comprimento de cada lado de um triângulo é menor do que a soma dos comprimentos dos outros dois lados.
+
+5 - Incremente o exercício anterior, para o caso das medidas formarem um triângulo válido , informar qual o tipo de triângulo que eles formam: equilátero, isósceles ou escaleno.
+
+6 -  Incremente o exercício anterior, agora informando se este é também um triângulo retângulo.
+
+
+------------------------------------------------
+
+
+As perguntas 2, 4, 7, 9, 15,
+19, e 20 formam a subescala de ansiedade.
+⠀
+2.Senti minha boca seca
+Não se aplicou de maneira alguma
+Aplicou-se em algum grau, ou por pouco de tempo
+Aplicou-se em um grau considerável, ou por uma boa parte do tempo
+Aplicou-se muito, ou na maioria do tempo
+
+4.Tive dificuldade em respirar em alguns momentos (ex. respiração ofegante, falta de ar, sem ter feito nenhum esforço físico)
+Não se aplicou de maneira alguma
+Aplicou-se em algum grau, ou por pouco de tempo
+Aplicou-se em um grau considerável, ou por uma boa parte do tempo
+Aplicou-se muito, ou na maioria do tempo
+
+7.Senti tremores (ex. nas mãos)
+Não se aplicou de maneira alguma
+Aplicou-se em algum grau, ou por pouco de tempo
+Aplicou-se em um grau considerável, ou por uma boa parte do tempo
+Aplicou-se muito, ou na maioria do tempo
+
+9.Preocupei-me com situações em que eu pudesse entrar em pânico e parecesse ridículo (a)
+Não se aplicou de maneira alguma
+Aplicou-se em algum grau, ou por pouco de tempo
+Aplicou-se em um grau considerável, ou por uma boa parte do tempo
+Aplicou-se muito, ou na maioria do tempo
+
+20.Senti medo sem motivo
+Não se aplicou de maneira alguma
+Aplicou-se em algum grau, ou por pouco de tempo
+Aplicou-se em um grau considerável, ou por uma boa parte do tempo
+Aplicou-se muito, ou na maioria do tempo
+
+
+
+Resultados
+
+
+	*Dimensão Depressão – Nível Normal
+	*Sua pontuação sobre a dimensão de depressão demonstra que você não está depressivo(a).
+	*Dimensão Depressão – Moderado
+Sua pontuação na escala de depressão está elevada. É importante falar com o seu médico a fim de traçar uma conduta.
+	*Dimensão Depressão – Grave
+Sua pontuação na escala de depressão está elevada. É importante falar com o seu médico a fim de traçar uma conduta.
+	*Dimensão Depressão – Severa
+Sua pontuação na escala de depressão está elevada. É importante falar com o seu médico a fim de traçar uma conduta.
+-----------------------------------------
+	*Dimensão Ansiedade – Normal
+Sua pontuação sobre a dimensão de ansiedade demonstra que você não está ansioso(a).
+	*Dimensão Ansiedade – Leve
+Sua pontuação sobre a dimensão ansiosa não está elevada, entretanto, esteja atento à essa dimensão, fale com seu médico a respeito.
+	*Dimensão Ansiedade – Grave
+Sua pontuação na escala de ansiedade está elevada. É importante falar com o seu médico a fim de traçar uma conduta.
+	*Dimensão Ansiedade – Severa
+Sua pontuação na escala de ansiedade está elevada. É importante falar com o seu médico a fim de traçar uma conduta.
+-----------------------------------------
+	*Dimensão Estresse – Normal
+	Seu nível de estresse está baixo. Face aos fatores estressantes do cotidiano, você se adapta bem.
+	*Dimensão Estresse – Leve
+Seu nível de estresse está ligeiramente elevado. Entretanto, você não se encontra em níveis que colocam em risco sua saúde.
+	*Dimensão Estresse – Grave
+Os resultados demonstram um nível elevado de estresse. Você deve estar se sentindo exaurido pelos fatores estressantes do cotidiano. A tensão emocional produzida pelo acúmulo de fatores estressantes, o colocam sob risco de apresentar sintomas em um ou vários campos: relacional, intelectual, físico ou psíquico.
+-----------------------------------------

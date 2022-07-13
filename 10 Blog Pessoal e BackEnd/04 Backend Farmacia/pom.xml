@@ -12,8 +12,8 @@
 	<groupId>com.generation</groupId>
 	<artifactId>blogpessoal</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>blogpessoal</name>
-	<description>Projeto Blog Pessoal desenvolvido no bootcamp da Generation</description>
+	<name>BackendFamarcia</name>
+	<description>Projeto de Backend simples de uma farmácia desenvolvido no bootcamp da Generation</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
