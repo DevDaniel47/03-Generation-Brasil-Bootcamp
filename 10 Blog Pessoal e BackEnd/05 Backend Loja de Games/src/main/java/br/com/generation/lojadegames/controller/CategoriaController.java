@@ -27,17 +27,17 @@ public class CategoriaController {
 	private CategoriaRepository categoriaRepository;
 	
 	@GetMapping
-	public ResponseEntity<List<Categoria>> GetALL(){
+	public ResponseEntity<List<Categoria>> getALL(){
 		return ResponseEntity.ok(categoriaRepository.findAll());
 	}
 	
 	@GetMapping("*/(id)")
-	public ResponseEntity<Categoria> GetById(@PathVariable long id){
+	public ResponseEntity<Categoria> getById(@PathVariable long id){
 		return categoriaRepository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 	
 	@GetMapping("/nome/{nome}")
-	public ResponseEntity<List<Categoria>> GetByNome(@PathVariable String nome){
+	public ResponseEntity<List<Categoria>> getByNome(@PathVariable String nome){
 		return ResponseEntity.ok(categoriaRepository.findAllByNomeContainingIgnoreCase(nome));
 	}
 	

@@ -29,17 +29,17 @@ public class ProdutoController {
 	private ProdutoRepository produtoRepository;
 	
 	@GetMapping
-	public ResponseEntity<List<Produto>> GetAll(){
+	public ResponseEntity<List<Produto>> getAll(){
 		return ResponseEntity.ok(produtoRepository.findAll());
 	}
 	
 	@GetMapping("/id")
-	public ResponseEntity<Produto> GetById(@PathVariable long id){
+	public ResponseEntity<Produto> getById(@PathVariable long id){
 		return produtoRepository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 	
 	@GetMapping("/nome/{nome}")
-	public ResponseEntity<List<Produto>> GetByNome(@PathVariable String nome){
+	public ResponseEntity<List<Produto>> getByNome(@PathVariable String nome){
 		return ResponseEntity.ok(produtoRepository.findAllByNomeContainingIgnoreCase(nome));
 	}
 	

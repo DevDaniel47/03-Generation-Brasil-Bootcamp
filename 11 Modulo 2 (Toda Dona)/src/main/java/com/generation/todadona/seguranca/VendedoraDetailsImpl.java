@@ -1,25 +1,24 @@
-package br.com.generation.blogpessoal.seguranca;
+package com.generation.todadona.seguranca;
 
 import java.util.Collection;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import br.com.generation.blogpessoal.model.Usuario;
+import com.generation.todadona.model.VendedoraModel;
 
-public class UserDetailsImpl implements UserDetails {
+public class VendedoraDetailsImpl implements UserDetails {
+	public static final long serialVersionUID = 1L;
 
-	private static final long serialVersionUID = 1L;
-
-	private String userName;
+	private String userCpf;
 	private String password;
 
-	public UserDetailsImpl(Usuario user) {
-		this.userName = user.getUsuario();
+	public VendedoraDetailsImpl(VendedoraModel user) {
+		this.userCpf = user.getCpf();
 		this.password = user.getSenha();
 	}
 
-	public UserDetailsImpl() {
+	public VendedoraDetailsImpl() {
 	}
 
 	@Override
@@ -37,7 +36,7 @@ public class UserDetailsImpl implements UserDetails {
 	@Override
 	public String getUsername() {
 		// TODO Auto-generated method stub
-		return userName;
+		return userCpf;
 	}
 
 	@Override
