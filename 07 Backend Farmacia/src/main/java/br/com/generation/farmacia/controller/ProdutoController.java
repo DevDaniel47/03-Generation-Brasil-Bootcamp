@@ -19,41 +19,42 @@ import br.com.generation.farmacia.model.Produto;
 import br.com.generation.farmacia.repository.ProdutoRepository;
 
 @RestController
-@RequestMapping
+@RequestMapping("/produto")
 @CrossOrigin("*")
 public class ProdutoController {
 
 	@Autowired
 	private ProdutoRepository produtoRepository;
-	
+
 	@GetMapping
-	public ResponseEntity<List<Produto>> getAll(){
+	public ResponseEntity<List<Produto>> getAll() {
 		return ResponseEntity.ok(produtoRepository.findAll());
 	}
-	
+
 	@GetMapping("/id")
-	public ResponseEntity<Produto> getById(@PathVariable long id){
-		return produtoRepository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
+	public ResponseEntity<Produto> getById(@PathVariable long id) {
+		return produtoRepository.findById(id).map(resp -> ResponseEntity.ok(resp))
+				.orElse(ResponseEntity.notFound().build());
 	}
-	
+
 	@GetMapping("/nome/{nome}")
-	public ResponseEntity<List<Produto>> getByNome(@PathVariable String nome){
-		return ResponseEntity.ok(produtoRepository.findAllByNomeContatiningIgnoreCase(nome));
+	public ResponseEntity<List<Produto>> getByNome(@PathVariable String nome) {
+		return ResponseEntity.ok(produtoRepository.findAllByNomeContainingIgnoreCase(nome));
 	}
-	
+
 	@PostMapping
-	public ResponseEntity<Produto> post (@RequestBody Produto produto){
+	public ResponseEntity<Produto> post(@RequestBody Produto produto) {
 		return ResponseEntity.status(HttpStatus.CREATED).body(produtoRepository.save(produto));
 	}
-	
+
 	@PutMapping
-	public ResponseEntity<Produto> put (@RequestBody Produto produto){
+	public ResponseEntity<Produto> put(@RequestBody Produto produto) {
 		return ResponseEntity.status(HttpStatus.OK).body(produtoRepository.save(produto));
 	}
-	
+
 	@DeleteMapping("/{id}")
 	public void delete(@PathVariable long id) {
 		produtoRepository.deleteById(id);
 	}
-	
+
 }
