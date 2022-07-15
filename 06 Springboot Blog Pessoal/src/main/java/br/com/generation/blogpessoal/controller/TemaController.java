@@ -32,8 +32,8 @@ import org.springframework.http.ResponseEntity;
 		return ResponseEntity.ok(repository.findAll());
 	}
 	
-	@GetMapping("*/(id)")
-	public ResponseEntity<Tema> getById(@PathVariable long id){
+	@GetMapping("/{id}")
+	public ResponseEntity<Tema> getById(@PathVariable Long id){
 		return repository.findById(id).map(resp -> ResponseEntity.ok(resp)).orElse(ResponseEntity.notFound().build());
 	}
 	
@@ -53,8 +53,8 @@ import org.springframework.http.ResponseEntity;
 		return ResponseEntity.status(HttpStatus.OK).body(repository.save(tema));
 	}
 	
-	@DeleteMapping("*/{id}")
-	public void delete(@PathVariable long id) {
+	@DeleteMapping("/{id}")
+	public void delete(@PathVariable Long id) {
 		repository.deleteById(id);
 	}
 

@@ -21,7 +21,7 @@ public class Postagem {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long Id;
+	private Long Id;
 	
 	@NotNull
 	@Size(min = 5, max = 100)
@@ -38,11 +38,11 @@ public class Postagem {
 	@JsonIgnoreProperties("postagens")
 	private Tema tema;
 	
-	public long getId() {
+	public Long getId() {
 		return Id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		Id = id;
 	}
 
