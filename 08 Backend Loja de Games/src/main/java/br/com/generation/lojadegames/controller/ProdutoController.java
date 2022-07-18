@@ -2,7 +2,6 @@ package br.com.generation.lojadegames.controller;
 
 import java.util.List;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -32,7 +31,7 @@ public class ProdutoController {
 		return ResponseEntity.ok(produtoRepository.findAll());
 	}
 
-	@GetMapping("/id")
+	@GetMapping("/{id}")
 	public ResponseEntity<Produto> getById(@PathVariable long id) {
 		return produtoRepository.findById(id).map(resp -> ResponseEntity.ok(resp))
 				.orElse(ResponseEntity.notFound().build());
@@ -53,7 +52,7 @@ public class ProdutoController {
 		return ResponseEntity.status(HttpStatus.OK).body(produtoRepository.save(produto));
 	}
 
-	@DeleteMapping("/{id}")
+	@DeleteMapping("deletar/{id}")
 	public void delete(@PathVariable long id) {
 		produtoRepository.deleteById(id);
 	}
