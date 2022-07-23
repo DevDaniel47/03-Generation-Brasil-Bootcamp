@@ -1,0 +1,51 @@
+body{
+    height: 100vh;
+    background-color: rgba(2, 18, 30, 0.884);
+}
+
+h1, h2, h3{
+    margin: 20px 0px;
+}
+
+a{
+    text-decoration: none;
+    margin: 20px;
+}
+
+img{
+    display: block;
+    margin: 20px 0px;
+    height: 250px;
+    width: 700px;
+}
+
+
+
+
+.header{
+    margin-bottom: 50px;
+}
+
+.introducao{
+    margin-bottom: 50px;
+}
+
+.origem{
+    margin-bottom: 50px;
+}
+
+.familia{
+    margin-bottom: 50px;
+}
+
+.componentes{
+    margin-bottom: 50px;
+}
+
+.fabricacao{
+    margin-bottom: 50px;
+}
+
+.footer{
+    margin-bottom: 50px;
+}

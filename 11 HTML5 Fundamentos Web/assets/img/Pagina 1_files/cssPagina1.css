@@ -1,0 +1,41 @@
+body{
+    height: 100vh;
+    background-image: url(../img/Background-CssGeral.jpeg);
+    background-position: center;
+    background-size: 85vw;
+    background-repeat: repeat-y;
+    background-color: rgba(2, 18, 30, 0.884);
+}
+
+.header{
+    margin-bottom: 50px;
+}
+
+.header a{
+    text-decoration: none;
+    margin: 20px;
+}
+
+.introducao{
+
+}
+
+.origem{
+
+}
+
+.familia{
+
+}
+
+.componentes{
+
+}
+
+.fabricacao{
+
+}
+
+.footer{
+    
+}

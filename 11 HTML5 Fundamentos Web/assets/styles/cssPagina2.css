@@ -1,0 +1,224 @@
+*{ 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------
+--------------------Divisão de Setores-> */
+h1{
+    font-size: 50px;
+    padding-top: 10px;
+}
+h2{
+    font-size: 45px;
+}
+h3{
+    font-size: 40px;
+}
+h4{
+    font-size: 35px;
+}
+h5{
+    font-size: 30px;
+}
+h6{
+    font-size: 25px;
+}
+p{
+    margin-top: 25px;
+    width: 50%;
+    font-size: 20px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------
+--------------------Divisão de Setores-> */
+body{
+    width: calc(100% - 20%);
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    position: fixed;
+    width: calc(100% - 20%);
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    background-color: white;
+}
+header div{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+header ul{
+    display: flex;
+    align-items: center;
+}
+.logo-header{
+    width: 65px;
+    height: 65px;
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    list-style: none;
+}
+li a{  
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    color: rgb(53, 53, 53);
+    
+}
+
+
+/* ------------------------------------------------------------------------------------------------------
+--------------------Divisão de Setores-> */
+section{
+    height: 100vh;
+    padding-top: 65px;
+    padding-left: 30px;
+}
+#Bem-vindo{
+    color: white;
+    background-image: url(../img/cornered-stairs.svg);
+    background-position: center center;
+    background-size: cover;
+}
+#Bem-vindo div{
+    display: block;
+    float: left;
+    padding: 20% 0% 0% 5%;
+
+}
+#Bem-vindo a img{
+    display: block;
+    height: 400px;
+    float: right;
+    padding: 10% 5% 5% 0%;
+}
+#Sobre{
+    background-image: url(../img/subtle-prism.svg);
+    background-position: center center;
+    background-size: cover;
+    
+}
+#Integrantes{
+    background-image: url(../img/page-turner.svg);
+    background-position: top left ;
+    background-repeat: no-repeat;
+    background-size: 550px;
+    background-color: rgb(255, 255, 255);
+
+} 
+.Daniel-foto{
+    display: block;   
+    float: right;
+}
+.Daniel-foto img{
+    height: 200px;
+}
+.Daniel-foto span{
+    display: block;
+    font-size: 20px;
+    text-align: center;
+}
+
+#Contato{
+    color: white;
+    background-image: url(../img/confetti-doodles.svg);
+    background-position: center center;
+    background-size: cover;
+    
+}
+#Contato form{
+    margin-top: 70px;
+}
+#Contato form, #Contato form input, #Contato form textarea {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+}
+#Contato input[type=text]{
+    display: inline-block;
+	border: 1px solid #ffffff;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 38%;
+	font-size: 16px;
+	font-family: 'Open sans', sans-serif;
+}
+ #Contato input[type=email], #Contato textarea{
+	display: inline-block;
+	border: 1px solid #ffffff;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 53%;
+	font-size: 16px;
+	font-family: 'Open sans', sans-serif;
+}
+#Contato input[type=tel]{
+	display: inline-block;
+	border: 1px solid #ffffff;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 24%;
+	font-size: 16px;
+	font-family: 'Open sans', sans-serif;
+}
+#Contato input[type=text]:focus, #Contato input[type=email]:focus, #Contato textarea:focus {
+	border-color: #2790C6;
+}
+#Contato textarea {
+	height: 150px;
+}
+#Contato ::placeholder {
+	color: #2790C6;
+}
+#Contato form div{
+    display: flex;
+    width: 76%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+#Contato input[type=submit], #Contato input[type=reset] {
+    display: block;
+	font-size: 36px;
+	width: 280px;
+    background-color: #2790C6;
+}
+#Contato input[type=reset] {
+    display: block;
+	margin-left: 0px;
+	font-size: 36px;
+	width: 130px;
+    background-color: #2790C6;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------
+--------------------Divisão de Setores-> */
+footer a{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    text-decoration: none;
+
+    border-radius: 30px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
